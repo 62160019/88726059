@@ -41,8 +41,8 @@
                     Name
                 </td>
                 <td>
-                    <input type="text" placeholder="First">
-                    <input type="text" placeholder="Last">
+                    <input type="text" name="fname"id="FirstName" placeholder="First">
+                    <input type="text" name="lname"id="LasrName"placeholder="Last">
                 </td>
             </tr>
             <tr>
@@ -50,7 +50,56 @@
                     Email
                 </td>
                 <td>
-                    <input type="text" placeholder="Email@hotmail.com">
+                    <input type="text" name="email" id="Email" placeholder="Email@hotmail.com">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Arrival
+                </td>
+                <td>
+                    <input type="text" name="arrivaldate" id="Arrival"placeholder='DD/MM/YY'>
+                    <input type="text" name="arrivaltime" id="Arrivaltime"placeholder='HH:MM'>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Departure
+                </td>
+                <td>
+                    <input type="text" name="departuredate" id="Departure"placeholder='DD/MM/YY'>
+                    <input type="text" name="departuretime" id="Departure"placeholder='HH:MM'>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Free Pickup
+                </td>
+                <td>
+                    <input type="radio" name="pickup" id="Free Pickup" value="Yes">Yes,Sure!
+                    <input type="radio" name="pickup" id="Free Pickup" value="No">No, i already rented a car.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Flight Number
+                </td>
+                <td>
+                <input type="text"name="flightnum" id="Flight" placeholder="C1209">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Other requests
+                </td>
+                <td>
+                    <input type="text"name="otherreq"id="Other requests" rows="5" cols="50">
+                </td>
+                
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="Send"placeholder="Complete Reservation">
                 </td>
             </tr>
         </table>
