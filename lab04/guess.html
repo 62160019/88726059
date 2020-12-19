@@ -1,0 +1,35 @@
+<input type="text" placeholder="Enter Your Number" id="number">
+<button onclick="guess()">Enter</button>
+<button onclick="startOver()">Reset</button>
+<div id="hist"></div>
+<div id="result"></div>
+
+Kanin Nittayawan ส่ง 19 ธันวาคม เวลา 18.44 น.
+
+<script>
+    rn = Math.floor(Math.random() * 100);
+    function guess(){
+        num = document.getElementById('number');
+        hist = document.getElementById('hist');
+        result = document.getElementById('result');
+        hist.innerHTML += num.value +" "
+        
+        if(parseInt(num.value)==rn){
+            result.innerHTML= "ถูกต้อง" 
+        }
+        else if(parseInt(num.value)<rn) {
+            result.innerHTML= "น้อยไป"
+        }
+        else if(parseInt(num.value)>rn) {
+            result.innerHTML= "มากไป"
+        }
+
+    }
+    function startOver(){
+        num = document.getElementById('number').value=""
+        hist = document.getElementById('hist').innerHTML=""
+        result = document.getElementById('result').innerHTML=""
+        rn = Math.floor(Math.random() * 100);
+    }
+</script>
+
