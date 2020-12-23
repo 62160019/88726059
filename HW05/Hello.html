@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>  
+    <B>1.โปรแกรมทักทาย-Hello.html</B>
+</body>
+<br>
+<br>
+<script>
+    function multi(n) {
+        
+        div = document.getElementById('disp');
+        div.innerHTML = "";
+
+            div.innerHTML +="Hello "+n;
+        
+    }
+</script>
+
+<input type="text" onkeyup="multi(this.value);" placeholder="ชื่อ">
+<div id="disp"> </div>

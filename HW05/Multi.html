@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>  
+    <B>2.โปรแกรมสูตรคูณ-Multi.html</B>
+</body>
+<br>
+<br>
+<script>
+    function multi(n) {
+        
+        div = document.getElementById('disp');
+        div.innerHTML = "";
+        for (i = 1; i <= 12; i++) {
+            div.innerHTML += n + "x" + i + "=" + (n * i) + "<br>";
+        }
+    }
+</script>
+
+<input type="text" onkeyup="multi(this.value);" placeholder="สูตรคูณ X">
+<div id="disp"> </div>
